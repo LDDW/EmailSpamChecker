@@ -1,3 +1,137 @@
 {
-    "name": "test"
+    "categories": [
+        {
+            "name": "Promos et gratuité",
+            "words": [
+                "Gratuit", 
+                "100% gratuit", 
+                "Remboursé", 
+                "Cadeau", 
+                "Appel gratuit", 
+                "Pas de frais", 
+                "Inscription gratuite", 
+                "Essai gratuit", 
+                "Accès gratuit", 
+                "Gratuitement", 
+                "Réduction", 
+                "Rabais", 
+                "Meilleur prix", 
+                "Promotion", 
+                "Promotion spéciale", 
+                "Offre spéciale", 
+                "Comparer les prix", 
+                "Pour Seulement", 
+                "Pas cher", 
+                "Adorable", 
+                "Coût", 
+                "Coupon", 
+                "50%"
+            ]
+        }, 
+        {
+            "name": "Sentiment d'urgence et de pression",
+            "words": [
+                "Faites vite", 
+                "Urgent !", 
+                "Profitez maintenant", 
+                "Offre limitée", 
+                "Dès maintenant", 
+                "Dès aujourd’hui", 
+                "N’hésitez plus", 
+                "Appeler maintenant", 
+                "Expire", 
+                "Temps limité", 
+                "Durée limitée", 
+                "Quantités limitées", 
+                "Rupture de stock"
+            ]
+        },
+        {
+            "name": "Comportement qui sous entend un gain",
+            "words": [
+                "Vous avez gagné", 
+                "Bravo !", 
+                "Ouvrez pour découvrir votre cadeau", 
+                "Cadeau exceptionnel", 
+                "Gagnant",
+                "Vous avez été choisi", 
+                "Félicitations !", 
+                "Récompense", 
+                "Pour vous seulement", 
+                "Garanti", 
+                "100% garanti", 
+                "100% sûr", 
+                "Certifié", 
+                "Sans risque", 
+                "Deal incroyable", 
+                "Bonus", 
+                "Bonne affaire", 
+                "Vu à la TV",  
+                "Deal", 
+                "Ça fonctionne", 
+                "Satisfaction garantie", 
+                "Pas d’arnaque", 
+                "Pas de spam", 
+                "Identité", 
+                "Mot de passe", 
+                "Pas de coût cachés", 
+                "Aucun risque"
+            ]
+        },
+        {
+            "name": "Vocabulaire de l’argent synonyme d’arnaque",
+            "words": [
+                "Cash", 
+                "Money", 
+                "Facile", 
+                "Argent rapide", 
+                "Gagner de l’argent", 
+                "Revenu supplémentaire", 
+                "Bénéfice", 
+                "Millions de dollars", 
+                "Economiser", 
+                "Meilleur prix", 
+                "Euros", 
+                "Profits", 
+                "Gains", 
+                "Votre propre patron", 
+                "Carte de crédit", 
+                "Carte bancaire", 
+                "Investissement", 
+                "Faillite", 
+                "Revenu", 
+                "Salaire", 
+                "Taux d’intérêt", 
+                "Assurance", 
+                "Sortir des dettes", 
+                "Remboursement", 
+                "Remboursement intégrale", 
+                "Chèque", 
+                "Virement bancaire", 
+                "Débit", 
+                "Hypothèque", 
+                "Paypal", 
+                "Prime", 
+                "Rendement", 
+                "Visa", 
+                "Mastercard"
+
+            ]
+        },
+        {
+            "name": "Vocabulaire spécifique à la vente et au marketing",
+            "words": [
+                "Ventes", 
+                "Soldes", 
+                "Augmentez vos ventes", 
+                "Augmentez votre trafic", 
+                "Cliquez ici", 
+                "Commande", 
+                "Plus de ventes", 
+                "Chiffres d’affaires", 
+                "Marketing", 
+                "Augmentez"
+            ]
+        }
+    ]
 }

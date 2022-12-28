@@ -1,13 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+
+    <header class="fixed top-0 z-10 px-3 w-full h-20 flex items-center justify-between bg-gray-50 shadow-md">
+        <a href="https://www.instagram.com/p/CWxp8cfITg3/?igshid=YmMyMTA2M2Y=" target="_blank" class="px-5">Source</a>
+        <a href="https://github.com/LDDW/EmailSpanChecker" target="_blank" class="block">
+            <button class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-900 text-gray-100">
+                <i class='bx bxl-github text-4xl'></i>
+            </button>
+        </a>
+    </header>
+
+    <main class="pt-20 px-10">
+        <section id="home" class="mb-10">
+            <div class="my-16">
+                <h1 class="mb-2 text-center text-3xl font-medium uppercase">Email Spam Checker</h1>
+                <p class="text-center">Avec Email spam checker, vérifiez si le contenu votre mail ne finit pas dans les spams.</p>
+            </div>
+            <div class="relative mb-6">
+                <div id="textarea" contentEditable="true" class="w-full h-[30vh] overflow-scroll p-6 border-[1px] border-gray-300 rounded-xl outline-none focus:border-black transition-all resize-none text-base" placeholder="Entrez le contenu de votre mail"></div>
+                <div id="loader" class="hidden absolute bottom-5 right-4 loader rounded-full border-[3px] border-gray-200 h-6 w-6"></div>
+                <div class="absolute bottom-4 left-4 p-2 rounded-lg text-gray-600 bg-white"><span id="counter">0</span> Mots</div>
+            </div>
+            <table>
+                <thead class="bg-gray-200">
+                    <tr>
+                        <th class="p-3 border-[1px] border-gray-300 uppercase font-semibold">Catégories</th>
+                        <th class="p-3 border-[1px] border-gray-300 uppercase font-semibold">Mots</th>
+                    </tr>
+                </thead>
+                <tbody id="table">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 py-10">
+        <a href="https://github.com/LDDW/EmailSpanChecker" target="_blank" class="flex items-center justify-center text-gray-100">
+            <p>Copyright 2023 LDDW</p>
+            <i class='bx bxl-github'></i>
+        </a>
+    </footer>
     
     <script type="module" src="./js/app.js"></script>
 </body>
