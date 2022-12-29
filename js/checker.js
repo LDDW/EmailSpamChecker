@@ -35,19 +35,28 @@ export class Checker {
      * @param {*} object 
      */
     async check(data){
-        try {
-            if(data !== undefined && data !== ''){
-                const arrayWithAllWords = await this.#getArrayWithAllWords();
-                arrayWithAllWords.forEach(word => {
-                    if(data.toLowerCase().indexOf(word) > - 1){
-                        console.log(word)
-                    }
-                })
-            } else {
-                throw 'data is empty';
-            }
-        } catch (error) {
-            console.log(error)
+        if(data !== ''){
+            const arrayWithAllWords = await this.#getArrayWithAllWords();
+            // const arrayUserMail = data.split(/\s/g);
+            // let str = '';
+            // arrayUserMail.forEach(userWord => {
+            //     let word = userWord.replace(/[.,!?]/g, '');
+            //     if (arrayWithAllWords.indexOf(word) > -1) {
+            //         str += `<span style="color:red;">${userWord}</span> `;
+            //     } else {
+            //         str += `${userWord} `;
+            //     }
+            // });
+
+            let str = data;
+            arrayWithAllWords.forEach(jsonWord => {
+                if(data.toLowerCase().search(jsonWord) > -1){
+                    str =  str.replace(jsonWord, `<span style="color:red;">${jsonWord}</span>`);
+                }
+            });
+            return str;
+        } else {
+            return '';
         }
     }   
 
@@ -82,6 +91,30 @@ export class Checker {
             console.log(error)
         }
         return html;
+    }
+
+    /**
+     * @function counter of word in textarea
+     * @param {*} string data 
+     * @returns 
+     */
+    counter(data){
+        try {
+            if(data !== ''){
+                let str = data.replace(/[0-9 `~!@#$%^&*()_|+\-–=?;:'"“”’,.<>\{\}\[\]\\\/]/g, ' ');
+                let array = [];
+                str.split(' ').forEach(index => {
+                    if(index !== ' ' && index !== ''){
+                        array.push(index)
+                    }
+                });
+                return array.length;
+            } else {
+                return '0';
+            }
+        } catch (error) {
+            console.log(error);
+        }
     }
 
 }
