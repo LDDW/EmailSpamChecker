@@ -1,3 +1,3 @@
 # EmailSpanChecker
 
-link : https://lddw.github.io/EmailSpanChecker/
+lien : https://lddw.github.io/EmailSpanChecker/
